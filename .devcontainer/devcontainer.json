@@ -1,0 +1,22 @@
+{
+    "name": "reprint",
+    "dockerFile": "../Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "shd101wyy.markdown-preview-enhanced"
+            ]
+        }
+    },
+    "forwardPorts": [],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+    "runArgs": ["--env-file", ".env"]
+}

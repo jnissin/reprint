@@ -2,7 +2,6 @@ azure-ai-formrecognizer==3.3.3
 azure-ai-documentintelligence==1.0.0
 azure-core==1.32.0
 EbookLib==0.18
-requests==2.0.0
 urlextract==1.9.0
 python-dotenv==1.0.1
 jupyter==1.1.1

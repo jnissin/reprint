@@ -4,8 +4,8 @@ import azure.ai.formrecognizer as fr
 
 from typing import List, Dict, Union
 
-from ..core.models import DocumentElement
-from ..utils.geometry import bounding_regions_intersect
+from reprint.core.models import DocumentElement
+from reprint.utils.geometry import bounding_regions_intersect
 
 
 def get_document_elements(result: fr.AnalyzeResult) -> List[DocumentElement]:

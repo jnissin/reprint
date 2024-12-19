@@ -7,16 +7,16 @@ from typing import List
 from ebooklib import epub
 from urlextract import URLExtract
 
-from ..azure.converters import table_to_html, paragraph_to_html
-from ..core.processing import (
+from reprint.azure.converters import table_to_html, paragraph_to_html
+from reprint.core.processing import (
     get_document_elements,
     sort_document_elements,
     filter_document_elements
 )
-from ..core.models import DocumentElement
-from ..utils.text import fix_hyphenation, convert_urls_to_links
+from reprint.core.models import DocumentElement
+from reprint.utils.text import fix_hyphenation, convert_urls_to_links
 
-from .styles import DEFAULT_EPUB_CSS
+from reprint.epub.styles import DEFAULT_EPUB_CSS
 
 
 def get_title(pdf_file_path: str, result: fr.AnalyzeResult) -> str:
